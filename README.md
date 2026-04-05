@@ -99,7 +99,7 @@ I build end-to-end ML systems, from research prototypes to production-grade pipe
 
 <br/>
 
-> Built AI systems at **annam.ai** → then contributed to **turocrate.ai** & **neurofin.ai** in parallel
+> Worked at **ISRO** → Built AI systems at **annam.ai** → then contributed to **turocrate.ai** & **neurofin.ai** in parallel
 
 </div>
 

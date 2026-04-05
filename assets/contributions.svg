@@ -4,6 +4,10 @@
       <stop offset="0%" style="stop-color:#0d1117"/>
       <stop offset="100%" style="stop-color:#161b22"/>
     </linearGradient>
+    <linearGradient id="isro" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f0883e"/>
+      <stop offset="100%" style="stop-color:#f4a261"/>
+    </linearGradient>
     <linearGradient id="annam" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#58a6ff"/>
       <stop offset="100%" style="stop-color:#79c0ff"/>
@@ -33,110 +37,133 @@
   <text x="400" y="32" text-anchor="middle" fill="#c9d1d9" font-family="'JetBrains Mono', monospace" font-size="11" letter-spacing="3" font-weight="600">CONTRIBUTIONS</text>
 
   <!-- Timeline base line -->
-  <line x1="80" y1="120" x2="720" y2="120" stroke="#21262d" stroke-width="2"/>
+  <line x1="60" y1="120" x2="740" y2="120" stroke="#21262d" stroke-width="2"/>
 
   <!-- Timeline arrow -->
-  <polygon points="720,120 710,115 710,125" fill="#21262d"/>
+  <polygon points="740,120 730,115 730,125" fill="#21262d"/>
 
   <!-- Phase markers on timeline -->
-  <line x1="160" y1="110" x2="160" y2="130" stroke="#30363d" stroke-width="1" stroke-dasharray="3,3"/>
-  <line x1="400" y1="110" x2="400" y2="130" stroke="#30363d" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="225" y1="110" x2="225" y2="130" stroke="#30363d" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="420" y1="110" x2="420" y2="130" stroke="#30363d" stroke-width="1" stroke-dasharray="3,3"/>
 
-  <!-- ═══ ANNAM.AI ═══ (sequential, first) -->
+  <!-- ═══ ISRO ═══ (sequential, first) -->
   <!-- Connection line down to timeline -->
-  <line x1="240" y1="70" x2="240" y2="120" stroke="#58a6ff" stroke-width="1" opacity="0.4"/>
+  <line x1="150" y1="70" x2="150" y2="120" stroke="#f0883e" stroke-width="1" opacity="0.4"/>
 
   <!-- Bar -->
-  <rect x="120" y="55" width="240" height="30" rx="6" fill="#58a6ff" opacity="0.08"/>
-  <rect x="120" y="55" width="240" height="30" rx="6" fill="none" stroke="#58a6ff" stroke-width="1" opacity="0.4">
+  <rect x="80" y="55" width="140" height="30" rx="6" fill="#f0883e" opacity="0.08"/>
+  <rect x="80" y="55" width="140" height="30" rx="6" fill="none" stroke="#f0883e" stroke-width="1" opacity="0.4">
     <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3s" repeatCount="indefinite"/>
   </rect>
 
   <!-- Animated fill -->
-  <rect x="121" y="56" width="0" height="28" rx="5" fill="#58a6ff" opacity="0.12">
-    <animate attributeName="width" values="0;238" dur="2s" fill="freeze"/>
+  <rect x="81" y="56" width="0" height="28" rx="5" fill="#f0883e" opacity="0.12">
+    <animate attributeName="width" values="0;138" dur="1.5s" fill="freeze"/>
   </rect>
 
   <!-- Glow dot at start -->
-  <circle cx="120" cy="70" r="4" fill="#58a6ff" filter="url(#glow)" opacity="0.9">
+  <circle cx="80" cy="70" r="4" fill="#f0883e" filter="url(#glow)" opacity="0.9">
     <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
   </circle>
 
   <!-- Label -->
-  <text x="240" y="74" text-anchor="middle" fill="#58a6ff" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" filter="url(#glow)">annam.ai</text>
+  <text x="150" y="74" text-anchor="middle" fill="#f0883e" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" filter="url(#glow)">ISRO</text>
+
+  <!-- ═══ ANNAM.AI ═══ (sequential, second) -->
+  <!-- Connection line down to timeline -->
+  <line x1="315" y1="70" x2="315" y2="120" stroke="#58a6ff" stroke-width="1" opacity="0.4"/>
+
+  <!-- Bar -->
+  <rect x="245" y="55" width="140" height="30" rx="6" fill="#58a6ff" opacity="0.08"/>
+  <rect x="245" y="55" width="140" height="30" rx="6" fill="none" stroke="#58a6ff" stroke-width="1" opacity="0.4">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Animated fill -->
+  <rect x="246" y="56" width="0" height="28" rx="5" fill="#58a6ff" opacity="0.12">
+    <animate attributeName="width" values="0;138" dur="1.5s" begin="0.8s" fill="freeze"/>
+  </rect>
+
+  <!-- Glow dot at start -->
+  <circle cx="245" cy="70" r="4" fill="#58a6ff" filter="url(#glow)" opacity="0.9">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Label -->
+  <text x="315" y="74" text-anchor="middle" fill="#58a6ff" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" filter="url(#glow)">annam.ai</text>
 
   <!-- ═══ TUROCRATE.AI ═══ (parallel, upper branch) -->
   <!-- Branch line from timeline up -->
-  <line x1="400" y1="120" x2="400" y2="55" stroke="#a371f7" stroke-width="1" opacity="0.3"/>
-  <line x1="400" y1="55" x2="420" y2="55" stroke="#a371f7" stroke-width="1" opacity="0.3"/>
+  <line x1="420" y1="120" x2="420" y2="55" stroke="#a371f7" stroke-width="1" opacity="0.3"/>
+  <line x1="420" y1="55" x2="440" y2="55" stroke="#a371f7" stroke-width="1" opacity="0.3"/>
 
   <!-- Bar -->
-  <rect x="420" y="40" width="260" height="30" rx="6" fill="#a371f7" opacity="0.08"/>
-  <rect x="420" y="40" width="260" height="30" rx="6" fill="none" stroke="#a371f7" stroke-width="1" opacity="0.4">
+  <rect x="440" y="40" width="260" height="30" rx="6" fill="#a371f7" opacity="0.08"/>
+  <rect x="440" y="40" width="260" height="30" rx="6" fill="none" stroke="#a371f7" stroke-width="1" opacity="0.4">
     <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3.5s" begin="0.5s" repeatCount="indefinite"/>
   </rect>
 
   <!-- Animated fill -->
-  <rect x="421" y="41" width="0" height="28" rx="5" fill="#a371f7" opacity="0.12">
-    <animate attributeName="width" values="0;258" dur="2s" begin="1s" fill="freeze"/>
+  <rect x="441" y="41" width="0" height="28" rx="5" fill="#a371f7" opacity="0.12">
+    <animate attributeName="width" values="0;258" dur="2s" begin="1.2s" fill="freeze"/>
   </rect>
 
   <!-- Glow dot -->
-  <circle cx="420" cy="55" r="4" fill="#a371f7" filter="url(#glow)" opacity="0.9">
+  <circle cx="440" cy="55" r="4" fill="#a371f7" filter="url(#glow)" opacity="0.9">
     <animate attributeName="opacity" values="0.6;1;0.6" dur="2.5s" begin="0.5s" repeatCount="indefinite"/>
   </circle>
 
   <!-- Label -->
-  <text x="550" y="59" text-anchor="middle" fill="#a371f7" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" filter="url(#glow)">turocrate.ai</text>
+  <text x="570" y="59" text-anchor="middle" fill="#a371f7" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" filter="url(#glow)">turocrate.ai</text>
 
   <!-- ═══ NEUROFIN.AI ═══ (parallel, lower branch) -->
   <!-- Branch line from timeline down -->
-  <line x1="400" y1="120" x2="400" y2="185" stroke="#3fb950" stroke-width="1" opacity="0.3"/>
-  <line x1="400" y1="185" x2="420" y2="185" stroke="#3fb950" stroke-width="1" opacity="0.3"/>
+  <line x1="420" y1="120" x2="420" y2="185" stroke="#3fb950" stroke-width="1" opacity="0.3"/>
+  <line x1="420" y1="185" x2="440" y2="185" stroke="#3fb950" stroke-width="1" opacity="0.3"/>
 
   <!-- Bar -->
-  <rect x="420" y="170" width="260" height="30" rx="6" fill="#3fb950" opacity="0.08"/>
-  <rect x="420" y="170" width="260" height="30" rx="6" fill="none" stroke="#3fb950" stroke-width="1" opacity="0.4">
+  <rect x="440" y="170" width="260" height="30" rx="6" fill="#3fb950" opacity="0.08"/>
+  <rect x="440" y="170" width="260" height="30" rx="6" fill="none" stroke="#3fb950" stroke-width="1" opacity="0.4">
     <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3s" begin="1s" repeatCount="indefinite"/>
   </rect>
 
   <!-- Animated fill -->
-  <rect x="421" y="171" width="0" height="28" rx="5" fill="#3fb950" opacity="0.12">
-    <animate attributeName="width" values="0;258" dur="2s" begin="1s" fill="freeze"/>
+  <rect x="441" y="171" width="0" height="28" rx="5" fill="#3fb950" opacity="0.12">
+    <animate attributeName="width" values="0;258" dur="2s" begin="1.2s" fill="freeze"/>
   </rect>
 
   <!-- Glow dot -->
-  <circle cx="420" cy="185" r="4" fill="#3fb950" filter="url(#glow)" opacity="0.9">
+  <circle cx="440" cy="185" r="4" fill="#3fb950" filter="url(#glow)" opacity="0.9">
     <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" begin="1s" repeatCount="indefinite"/>
   </circle>
 
   <!-- Label -->
-  <text x="550" y="189" text-anchor="middle" fill="#3fb950" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" filter="url(#glow)">neurofin.ai</text>
+  <text x="570" y="189" text-anchor="middle" fill="#3fb950" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" filter="url(#glow)">neurofin.ai</text>
 
   <!-- Fork node at split point -->
-  <circle cx="400" cy="120" r="6" fill="#0d1117" stroke="#c9d1d9" stroke-width="1.5"/>
-  <circle cx="400" cy="120" r="3" fill="#c9d1d9" opacity="0.8">
+  <circle cx="420" cy="120" r="6" fill="#0d1117" stroke="#c9d1d9" stroke-width="1.5"/>
+  <circle cx="420" cy="120" r="3" fill="#c9d1d9" opacity="0.8">
     <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
   </circle>
 
   <!-- Start node -->
-  <circle cx="80" cy="120" r="5" fill="#0d1117" stroke="#58a6ff" stroke-width="1.5"/>
-  <circle cx="80" cy="120" r="2.5" fill="#58a6ff" opacity="0.8"/>
+  <circle cx="60" cy="120" r="5" fill="#0d1117" stroke="#f0883e" stroke-width="1.5"/>
+  <circle cx="60" cy="120" r="2.5" fill="#f0883e" opacity="0.8"/>
 
   <!-- Data flow particles -->
-  <circle r="1.5" fill="#58a6ff" opacity="0.8">
-    <animateMotion dur="3s" repeatCount="indefinite" path="M80,120 L240,120 L400,120"/>
+  <circle r="1.5" fill="#f0883e" opacity="0.8">
+    <animateMotion dur="3.5s" repeatCount="indefinite" path="M60,120 L150,120 L315,120 L420,120"/>
   </circle>
   <circle r="1.5" fill="#a371f7" opacity="0.8">
-    <animateMotion dur="2s" begin="1.5s" repeatCount="indefinite" path="M400,120 L400,55 L550,55"/>
+    <animateMotion dur="2s" begin="1.8s" repeatCount="indefinite" path="M420,120 L420,55 L570,55"/>
   </circle>
   <circle r="1.5" fill="#3fb950" opacity="0.8">
-    <animateMotion dur="2s" begin="1.5s" repeatCount="indefinite" path="M400,120 L400,185 L550,185"/>
+    <animateMotion dur="2s" begin="1.8s" repeatCount="indefinite" path="M420,120 L420,185 L570,185"/>
   </circle>
 
   <!-- "parallel" label at fork -->
-  <text x="400" y="145" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono', monospace" font-size="8" letter-spacing="2">PARALLEL</text>
+  <text x="420" y="145" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono', monospace" font-size="8" letter-spacing="2">PARALLEL</text>
 
   <!-- "sequential" label before fork -->
-  <text x="240" y="145" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono', monospace" font-size="8" letter-spacing="2">SEQUENTIAL</text>
+  <text x="200" y="145" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono', monospace" font-size="8" letter-spacing="2">SEQUENTIAL</text>
 </svg>
