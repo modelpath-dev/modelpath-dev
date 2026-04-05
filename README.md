@@ -1,66 +1,129 @@
-<img align="right" src="https://raw.githubusercontent.com/modelpath-dev/modelpath-dev/main/assets/header.svg" width="320" />
+<div align="center">
 
-## Hey, I'm Chandan 👋
+<img src="https://raw.githubusercontent.com/modelpath-dev/modelpath-dev/main/assets/header.svg" width="100%" />
 
-**AI/ML Engineer** building intelligent systems — from fine-tuning LLMs to deploying production pipelines.
+<br/>
 
-I work across the full ML stack: data, models, infrastructure, and interfaces.
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=40&lines=%F0%9F%94%AC+Turning+Data+into+Intelligence;%F0%9F%A7%A0+Fine-tuning+LLMs+%7C+Building+RAG+Pipelines;%F0%9F%9A%80+From+Notebooks+to+Production+ML;%E2%9A%A1+NLP+%C2%B7+Computer+Vision+%C2%B7+Deep+Learning)](https://github.com/modelpath-dev)
+
+</div>
+
+<br/>
+
+<img align="right" src="https://raw.githubusercontent.com/modelpath-dev/modelpath-dev/main/assets/brain.svg" width="280" />
+
+### `> whoami`
+
+```python
+class ChandanKumar:
+    role      = "AI/ML Engineer"
+    focus     = ["LLMs", "RAG", "Computer Vision", "NLP"]
+    languages = ["Python", "TypeScript", "Java"]
+    motto     = "Ship models, not just notebooks"
+```
+
+I build end-to-end ML systems — from research prototypes to production-grade pipelines. Whether it's fine-tuning a Mistral model, building retrieval-augmented generation systems, or deploying computer vision models for cell segmentation, I love turning complex AI problems into working software.
+
+<br clear="right"/>
 
 ---
 
-### What I work with
+### `> tech_stack.load()`
 
-**Languages & Frameworks**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
+<table>
+<tr>
+<td valign="top" width="33%">
 
 **AI / ML**
 
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat&logo=huggingface&logoColor=black)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
+![scikit--learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 
-**Infrastructure & Tools**
+</td>
+<td valign="top" width="33%">
 
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonwebservices&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+**Backend & Infra**
 
----
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 
-### Featured Projects
+</td>
+<td valign="top" width="33%">
 
-| Project | Description |
-|---|---|
-| [**CogniDB**](https://github.com/modelpath-dev/cognidb) | Natural language → SQL interface for MySQL, PostgreSQL, MongoDB & AWS RDS |
-| [**Mistral-Finetune**](https://github.com/modelpath-dev/Mistral-Finetune) | Fine-tuning Mistral models for custom use cases |
-| [**RAG Pipeline**](https://github.com/modelpath-dev/RAG_Pipeline) | Retrieval-Augmented Generation pipeline |
-| [**Cell-Seg**](https://github.com/modelpath-dev/Cell-Seg) | Cell segmentation using deep learning |
-| [**Video Summarizer**](https://github.com/modelpath-dev/Video-Summarizer) | AI-powered video summarization |
-| [**Code Optimizer**](https://github.com/modelpath-dev/Code_Optimizer) | Intelligent code optimization with LLMs |
-| [**Facematch**](https://github.com/modelpath-dev/Facematch) | Face recognition and matching system |
-| [**PolicyPulse**](https://github.com/modelpath-dev/PolicyPulse) | Policy analysis with NLP |
+**Data & Storage**
 
----
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
-### GitHub Stats
-
-<p>
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=modelpath-dev&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=modelpath-dev&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9" />
-</p>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=modelpath-dev&theme=react-dark&hide_border=true&bg_color=0d1117&color=58a6ff&line=58a6ff&point=ffffff" width="100%" />
+</td>
+</tr>
+</table>
 
 ---
 
-<p align="center">
-  <i>Open to collaborations on AI/ML projects — let's build something interesting.</i>
-</p>
+### `> featured_projects.showcase()`
+
+<div align="center">
+
+| | Project | What it does | Stack |
+|---|---|---|---|
+| 🧠 | [**CogniDB**](https://github.com/modelpath-dev/cognidb) | Talk to your database in plain English — NL→SQL for MySQL, Postgres, Mongo & AWS RDS | `NLP` `SQL` `LLM` |
+| 🔧 | [**Mistral-Finetune**](https://github.com/modelpath-dev/Mistral-Finetune) | Fine-tune Mistral models on custom datasets | `LLM` `Training` |
+| 📚 | [**RAG Pipeline**](https://github.com/modelpath-dev/RAG_Pipeline) | Production-ready Retrieval-Augmented Generation system | `RAG` `Embeddings` |
+| 🔬 | [**Cell-Seg**](https://github.com/modelpath-dev/Cell-Seg) | Deep learning for biomedical cell segmentation | `CV` `Medical AI` |
+| 🎥 | [**Video Summarizer**](https://github.com/modelpath-dev/Video-Summarizer) | AI-powered video content summarization | `NLP` `Multimodal` |
+| ⚡ | [**Code Optimizer**](https://github.com/modelpath-dev/Code_Optimizer) | LLM-powered intelligent code optimization | `LLM` `DevTools` |
+| 👤 | [**Facematch**](https://github.com/modelpath-dev/Facematch) | Face recognition & matching system | `CV` `Recognition` |
+| 📊 | [**PolicyPulse**](https://github.com/modelpath-dev/PolicyPulse) | NLP-driven policy document analysis | `NLP` `Analytics` |
+| 📄 | [**Scholar Paper**](https://github.com/modelpath-dev/Scholar_Paper) | Research paper analysis & insights | `NLP` `Research` |
+
+</div>
+
+---
+
+### `> stats.render()`
+
+<div align="center">
+
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=modelpath-dev&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=a371f7&text_color=c9d1d9&ring_color=58a6ff" />
+&nbsp;&nbsp;
+<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=modelpath-dev&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=8" />
+
+<br/><br/>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=modelpath-dev&theme=tokyonight&hide_border=true&background=0d1117&ring=58a6ff&fire=a371f7&currStreakLabel=58a6ff&sideLabels=58a6ff" />
+
+<br/><br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=modelpath-dev&theme=react-dark&hide_border=true&bg_color=0d1117&color=58a6ff&line=a371f7&point=58a6ff&area=true&area_color=58a6ff" width="95%" />
+
+</div>
+
+---
+
+<div align="center">
+
+```
+ ╔══════════════════════════════════════════════════════════╗
+ ║  "The best model is the one that ships." — me, probably ║
+ ╚══════════════════════════════════════════════════════════╝
+```
+
+**Open to collaborations on AI/ML projects**
+
+[![Gmail](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](#)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](#)
+
+<img src="https://komarev.com/ghpvc/?username=modelpath-dev&style=for-the-badge&color=58a6ff&label=PROFILE+VIEWS" />
+
+</div>

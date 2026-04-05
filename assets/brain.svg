@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="280" viewBox="0 0 280 280">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#58a6ff"/>
+      <stop offset="100%" style="stop-color:#a371f7"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#a371f7"/>
+      <stop offset="100%" style="stop-color:#58a6ff"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="280" height="280" fill="url(#bg)" rx="12"/>
+
+  <!-- Ambient glow -->
+  <circle cx="140" cy="130" r="60" fill="#58a6ff" opacity="0.04" filter="url(#softglow)">
+    <animate attributeName="opacity" values="0.03;0.07;0.03" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Brain outline - left hemisphere -->
+  <path d="M140,60 Q100,60 85,80 Q65,100 70,130 Q60,140 65,160 Q62,180 80,195 Q95,215 120,220 Q135,225 140,220"
+        fill="none" stroke="url(#g1)" stroke-width="1.5" opacity="0.6" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="3s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Brain outline - right hemisphere -->
+  <path d="M140,60 Q180,60 195,80 Q215,100 210,130 Q220,140 215,160 Q218,180 200,195 Q185,215 160,220 Q145,225 140,220"
+        fill="none" stroke="url(#g2)" stroke-width="1.5" opacity="0.6" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="3.5s" begin="0.5s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Brain folds - left -->
+  <path d="M100,90 Q115,100 105,115" fill="none" stroke="#58a6ff" stroke-width="0.8" opacity="0.3"/>
+  <path d="M80,120 Q100,115 95,140" fill="none" stroke="#58a6ff" stroke-width="0.8" opacity="0.25"/>
+  <path d="M85,155 Q105,148 100,170" fill="none" stroke="#58a6ff" stroke-width="0.8" opacity="0.3"/>
+  <path d="M95,180 Q115,175 110,195" fill="none" stroke="#58a6ff" stroke-width="0.8" opacity="0.25"/>
+
+  <!-- Brain folds - right -->
+  <path d="M180,90 Q165,100 175,115" fill="none" stroke="#a371f7" stroke-width="0.8" opacity="0.3"/>
+  <path d="M200,120 Q180,115 185,140" fill="none" stroke="#a371f7" stroke-width="0.8" opacity="0.25"/>
+  <path d="M195,155 Q175,148 180,170" fill="none" stroke="#a371f7" stroke-width="0.8" opacity="0.3"/>
+  <path d="M185,180 Q165,175 170,195" fill="none" stroke="#a371f7" stroke-width="0.8" opacity="0.25"/>
+
+  <!-- Central connection -->
+  <line x1="140" y1="65" x2="140" y2="215" stroke="url(#g1)" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Neural nodes inside brain -->
+  <g filter="url(#glow)">
+    <!-- Left nodes -->
+    <circle cx="105" cy="95" r="2.5" fill="#58a6ff" opacity="0.7">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="85" cy="130" r="2" fill="#58a6ff" opacity="0.6">
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="2.5s" begin="0.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="95" cy="160" r="2.5" fill="#58a6ff" opacity="0.8">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="1.8s" begin="0.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="110" cy="190" r="2" fill="#58a6ff" opacity="0.5">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="120" cy="120" r="3" fill="#58a6ff" opacity="0.7">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Right nodes -->
+    <circle cx="175" cy="95" r="2.5" fill="#a371f7" opacity="0.7">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.3s" begin="0.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="195" cy="130" r="2" fill="#a371f7" opacity="0.6">
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="185" cy="160" r="2.5" fill="#a371f7" opacity="0.8">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2.8s" begin="0.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="170" cy="190" r="2" fill="#a371f7" opacity="0.5">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" begin="0.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="160" cy="120" r="3" fill="#a371f7" opacity="0.7">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1.9s" begin="1.2s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Center nodes -->
+    <circle cx="140" cy="100" r="3" fill="#7b93db" opacity="0.9">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" begin="0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="140" cy="150" r="3.5" fill="#7b93db" opacity="0.8">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Synapse connections -->
+  <g stroke-width="0.4" opacity="0.15">
+    <line x1="105" y1="95" x2="140" y2="100" stroke="#58a6ff"/>
+    <line x1="120" y1="120" x2="140" y2="100" stroke="#58a6ff"/>
+    <line x1="85" y1="130" x2="120" y2="120" stroke="#58a6ff"/>
+    <line x1="120" y1="120" x2="140" y2="150" stroke="#58a6ff"/>
+    <line x1="95" y1="160" x2="140" y2="150" stroke="#58a6ff"/>
+    <line x1="110" y1="190" x2="140" y2="150" stroke="#58a6ff"/>
+    <line x1="175" y1="95" x2="140" y2="100" stroke="#a371f7"/>
+    <line x1="160" y1="120" x2="140" y2="100" stroke="#a371f7"/>
+    <line x1="195" y1="130" x2="160" y2="120" stroke="#a371f7"/>
+    <line x1="160" y1="120" x2="140" y2="150" stroke="#a371f7"/>
+    <line x1="185" y1="160" x2="140" y2="150" stroke="#a371f7"/>
+    <line x1="170" y1="190" x2="140" y2="150" stroke="#a371f7"/>
+    <!-- Cross connections -->
+    <line x1="105" y1="95" x2="175" y2="95" stroke="#7b93db"/>
+    <line x1="120" y1="120" x2="160" y2="120" stroke="#7b93db"/>
+    <line x1="95" y1="160" x2="185" y2="160" stroke="#7b93db"/>
+  </g>
+
+  <!-- Travelling pulses -->
+  <circle r="1.2" fill="#58a6ff" opacity="0.9">
+    <animateMotion dur="1.5s" repeatCount="indefinite" path="M105,95 L140,100 L160,120"/>
+  </circle>
+  <circle r="1.2" fill="#a371f7" opacity="0.9">
+    <animateMotion dur="2s" repeatCount="indefinite" path="M175,95 L140,100 L120,120"/>
+  </circle>
+  <circle r="1" fill="#7b93db" opacity="0.8">
+    <animateMotion dur="1.8s" repeatCount="indefinite" path="M140,100 L140,150 L95,160"/>
+  </circle>
+  <circle r="1" fill="#7b93db" opacity="0.8">
+    <animateMotion dur="2.2s" repeatCount="indefinite" path="M140,150 L160,120 L195,130"/>
+  </circle>
+
+  <!-- Labels -->
+  <text x="140" y="252" text-anchor="middle" fill="#58a6ff" font-family="'JetBrains Mono', monospace" font-size="9" letter-spacing="3" opacity="0.6">NEURAL ARCHITECTURE</text>
+  <text x="140" y="268" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono', monospace" font-size="7" letter-spacing="2">modelpath-dev</text>
+</svg>

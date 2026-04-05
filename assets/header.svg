@@ -1,55 +1,165 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320">
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="200" viewBox="0 0 850 200">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#0d1117"/>
-      <stop offset="100%" style="stop-color:#161b22"/>
+      <stop offset="50%" style="stop-color:#161b22"/>
+      <stop offset="100%" style="stop-color:#0d1117"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="glow1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#58a6ff;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#58a6ff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#a371f7;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="glow2" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#58a6ff"/>
       <stop offset="100%" style="stop-color:#a371f7"/>
     </linearGradient>
+    <filter id="blur1">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+    <filter id="blur2">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
-  <rect width="320" height="320" rx="16" fill="url(#bg)"/>
 
-  <!-- Neural network nodes -->
-  <!-- Layer 1 -->
-  <circle cx="60" cy="80" r="6" fill="url(#accent)" opacity="0.7"/>
-  <circle cx="60" cy="140" r="6" fill="url(#accent)" opacity="0.8"/>
-  <circle cx="60" cy="200" r="6" fill="url(#accent)" opacity="0.6"/>
-  <circle cx="60" cy="260" r="6" fill="url(#accent)" opacity="0.7"/>
+  <!-- Background -->
+  <rect width="850" height="200" fill="url(#bg)"/>
 
-  <!-- Layer 2 -->
-  <circle cx="160" cy="100" r="7" fill="url(#accent)" opacity="0.9"/>
-  <circle cx="160" cy="170" r="7" fill="url(#accent)" opacity="0.85"/>
-  <circle cx="160" cy="240" r="7" fill="url(#accent)" opacity="0.75"/>
+  <!-- Ambient glow orbs -->
+  <circle cx="150" cy="100" r="80" fill="#58a6ff" opacity="0.03" filter="url(#blur1)">
+    <animate attributeName="opacity" values="0.03;0.06;0.03" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="700" cy="100" r="80" fill="#a371f7" opacity="0.03" filter="url(#blur1)">
+    <animate attributeName="opacity" values="0.03;0.06;0.03" dur="5s" repeatCount="indefinite"/>
+  </circle>
 
-  <!-- Layer 3 -->
-  <circle cx="260" cy="130" r="8" fill="url(#accent)" opacity="0.95"/>
-  <circle cx="260" cy="210" r="8" fill="url(#accent)" opacity="0.9"/>
+  <!-- Animated grid lines -->
+  <g opacity="0.06">
+    <line x1="0" y1="50" x2="850" y2="50" stroke="#58a6ff" stroke-width="0.5"/>
+    <line x1="0" y1="100" x2="850" y2="100" stroke="#58a6ff" stroke-width="0.5"/>
+    <line x1="0" y1="150" x2="850" y2="150" stroke="#58a6ff" stroke-width="0.5"/>
+    <line x1="170" y1="0" x2="170" y2="200" stroke="#58a6ff" stroke-width="0.5"/>
+    <line x1="340" y1="0" x2="340" y2="200" stroke="#58a6ff" stroke-width="0.5"/>
+    <line x1="510" y1="0" x2="510" y2="200" stroke="#58a6ff" stroke-width="0.5"/>
+    <line x1="680" y1="0" x2="680" y2="200" stroke="#58a6ff" stroke-width="0.5"/>
+  </g>
 
-  <!-- Connections L1 -> L2 -->
-  <line x1="66" y1="80" x2="153" y2="100" stroke="#58a6ff" stroke-width="0.8" opacity="0.25"/>
-  <line x1="66" y1="80" x2="153" y2="170" stroke="#58a6ff" stroke-width="0.8" opacity="0.15"/>
-  <line x1="66" y1="80" x2="153" y2="240" stroke="#58a6ff" stroke-width="0.8" opacity="0.1"/>
-  <line x1="66" y1="140" x2="153" y2="100" stroke="#58a6ff" stroke-width="0.8" opacity="0.2"/>
-  <line x1="66" y1="140" x2="153" y2="170" stroke="#58a6ff" stroke-width="0.8" opacity="0.3"/>
-  <line x1="66" y1="140" x2="153" y2="240" stroke="#58a6ff" stroke-width="0.8" opacity="0.15"/>
-  <line x1="66" y1="200" x2="153" y2="100" stroke="#58a6ff" stroke-width="0.8" opacity="0.15"/>
-  <line x1="66" y1="200" x2="153" y2="170" stroke="#58a6ff" stroke-width="0.8" opacity="0.25"/>
-  <line x1="66" y1="200" x2="153" y2="240" stroke="#58a6ff" stroke-width="0.8" opacity="0.2"/>
-  <line x1="66" y1="260" x2="153" y2="100" stroke="#58a6ff" stroke-width="0.8" opacity="0.1"/>
-  <line x1="66" y1="260" x2="153" y2="170" stroke="#58a6ff" stroke-width="0.8" opacity="0.15"/>
-  <line x1="66" y1="260" x2="153" y2="240" stroke="#58a6ff" stroke-width="0.8" opacity="0.3"/>
+  <!-- Neural network - left side -->
+  <g filter="url(#glow)">
+    <!-- Layer 1 -->
+    <circle cx="80" cy="50" r="3" fill="#58a6ff" opacity="0.8">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" begin="0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="80" cy="90" r="3" fill="#58a6ff" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2.5s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="80" cy="130" r="3" fill="#58a6ff" opacity="0.9">
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="3.5s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="80" cy="170" r="3" fill="#58a6ff" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+    </circle>
 
-  <!-- Connections L2 -> L3 -->
-  <line x1="167" y1="100" x2="252" y2="130" stroke="#a371f7" stroke-width="0.8" opacity="0.3"/>
-  <line x1="167" y1="100" x2="252" y2="210" stroke="#a371f7" stroke-width="0.8" opacity="0.15"/>
-  <line x1="167" y1="170" x2="252" y2="130" stroke="#a371f7" stroke-width="0.8" opacity="0.25"/>
-  <line x1="167" y1="170" x2="252" y2="210" stroke="#a371f7" stroke-width="0.8" opacity="0.25"/>
-  <line x1="167" y1="240" x2="252" y2="130" stroke="#a371f7" stroke-width="0.8" opacity="0.15"/>
-  <line x1="167" y1="240" x2="252" y2="210" stroke="#a371f7" stroke-width="0.8" opacity="0.3"/>
+    <!-- Layer 2 -->
+    <circle cx="150" cy="70" r="3.5" fill="#7b93db" opacity="0.8">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.8s" begin="0.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="110" r="3.5" fill="#7b93db" opacity="0.7">
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="3.2s" begin="0.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="150" r="3.5" fill="#7b93db" opacity="0.9">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2.2s" begin="0.4s" repeatCount="indefinite"/>
+    </circle>
 
-  <!-- Text -->
-  <text x="160" y="38" text-anchor="middle" fill="#58a6ff" font-family="monospace" font-size="11" font-weight="bold" letter-spacing="4">MODELPATH</text>
-  <text x="160" y="305" text-anchor="middle" fill="#484f58" font-family="monospace" font-size="9" letter-spacing="2">AI / ML ENGINEER</text>
+    <!-- Layer 3 -->
+    <circle cx="220" cy="90" r="4" fill="#a371f7" opacity="0.8">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" begin="0.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="220" cy="130" r="4" fill="#a371f7" opacity="0.7">
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="2.6s" begin="1.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Connections with pulse animation -->
+  <g stroke-width="0.6" opacity="0.2">
+    <line x1="83" y1="50" x2="147" y2="70" stroke="#58a6ff"/>
+    <line x1="83" y1="50" x2="147" y2="110" stroke="#58a6ff"/>
+    <line x1="83" y1="90" x2="147" y2="70" stroke="#58a6ff"/>
+    <line x1="83" y1="90" x2="147" y2="110" stroke="#58a6ff"/>
+    <line x1="83" y1="90" x2="147" y2="150" stroke="#58a6ff"/>
+    <line x1="83" y1="130" x2="147" y2="70" stroke="#58a6ff"/>
+    <line x1="83" y1="130" x2="147" y2="110" stroke="#58a6ff"/>
+    <line x1="83" y1="130" x2="147" y2="150" stroke="#58a6ff"/>
+    <line x1="83" y1="170" x2="147" y2="110" stroke="#58a6ff"/>
+    <line x1="83" y1="170" x2="147" y2="150" stroke="#58a6ff"/>
+    <line x1="153" y1="70" x2="217" y2="90" stroke="#a371f7"/>
+    <line x1="153" y1="70" x2="217" y2="130" stroke="#a371f7"/>
+    <line x1="153" y1="110" x2="217" y2="90" stroke="#a371f7"/>
+    <line x1="153" y1="110" x2="217" y2="130" stroke="#a371f7"/>
+    <line x1="153" y1="150" x2="217" y2="90" stroke="#a371f7"/>
+    <line x1="153" y1="150" x2="217" y2="130" stroke="#a371f7"/>
+  </g>
+
+  <!-- Data flow particles on connections -->
+  <circle r="1.5" fill="#58a6ff" opacity="0.8">
+    <animateMotion dur="2s" repeatCount="indefinite" path="M83,90 L147,70"/>
+  </circle>
+  <circle r="1.5" fill="#58a6ff" opacity="0.6">
+    <animateMotion dur="2.5s" repeatCount="indefinite" path="M83,130 L147,110"/>
+  </circle>
+  <circle r="1.5" fill="#a371f7" opacity="0.8">
+    <animateMotion dur="2s" repeatCount="indefinite" path="M153,110 L217,90"/>
+  </circle>
+  <circle r="1.5" fill="#a371f7" opacity="0.6">
+    <animateMotion dur="2.3s" repeatCount="indefinite" path="M153,150 L217,130"/>
+  </circle>
+
+  <!-- Right side floating particles -->
+  <circle cx="650" cy="40" r="1.5" fill="#58a6ff" opacity="0.4">
+    <animate attributeName="cy" values="40;35;45;40" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.6;0.2" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="700" cy="160" r="1" fill="#a371f7" opacity="0.3">
+    <animate attributeName="cy" values="160;150;165;160" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="750" cy="80" r="2" fill="#58a6ff" opacity="0.3">
+    <animate attributeName="cy" values="80;70;85;80" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.1;0.4;0.1" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="790" cy="130" r="1" fill="#a371f7" opacity="0.4">
+    <animate attributeName="cy" values="130;120;135;130" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Main text -->
+  <text x="425" y="85" text-anchor="middle" fill="url(#glow2)" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="36" font-weight="700" letter-spacing="6" filter="url(#blur2)">
+    CHANDAN KUMAR
+  </text>
+  <text x="425" y="85" text-anchor="middle" fill="url(#glow2)" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="36" font-weight="700" letter-spacing="6">
+    CHANDAN KUMAR
+  </text>
+
+  <!-- Subtitle with typing cursor -->
+  <text x="425" y="120" text-anchor="middle" fill="#8b949e" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13" letter-spacing="3">
+    AI / ML ENGINEER
+  </text>
+
+  <!-- Decorative line -->
+  <rect x="325" y="135" width="200" height="1" fill="url(#glow1)" rx="1">
+    <animate attributeName="width" values="0;200" dur="2s" fill="freeze"/>
+    <animate attributeName="x" values="425;325" dur="2s" fill="freeze"/>
+  </rect>
+
+  <!-- Tagline -->
+  <text x="425" y="162" text-anchor="middle" fill="#484f58" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10" letter-spacing="1">
+    building intelligent systems  ·  fine-tuning LLMs  ·  production ML
+  </text>
+
+  <!-- Border glow -->
+  <rect x="0" y="0" width="850" height="200" fill="none" stroke="url(#glow2)" stroke-width="1" opacity="0.15" rx="4"/>
+  <rect x="2" y="2" width="846" height="196" fill="none" stroke="url(#glow2)" stroke-width="0.5" opacity="0.08" rx="3"/>
 </svg>
