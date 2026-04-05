@@ -22,7 +22,7 @@ class ChandanKumar:
     motto     = "Ship models, not just notebooks"
 ```
 
-I build end-to-end ML systems — from research prototypes to production-grade pipelines. Whether it's fine-tuning a Mistral model, building retrieval-augmented generation systems, or deploying computer vision models for cell segmentation, I love turning complex AI problems into working software.
+I build end-to-end ML systems, from research prototypes to production-grade pipelines. Whether it's fine-tuning a Mistral model, building retrieval-augmented generation systems, or deploying computer vision models for cell segmentation, I love turning complex AI problems into working software.
 
 <br clear="right"/>
 
