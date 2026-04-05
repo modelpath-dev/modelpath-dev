@@ -133,6 +133,6 @@ I build end-to-end ML systems — from research prototypes to production-grade p
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chandan-kumar-438aa3193/)
 [![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/CmlCodes)
 
-<img src="https://komarev.com/ghpvc/?username=modelpath-dev&style=for-the-badge&color=58a6ff&label=PROFILE+VIEWS" />
+<img src="https://hits.sh/github.com/modelpath-dev.svg?style=for-the-badge&label=PROFILE+VIEWS&color=58a6ff&labelColor=0d1117&extraCount=523" />
 
 </div>
