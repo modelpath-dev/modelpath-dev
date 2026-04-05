@@ -109,17 +109,19 @@ I build end-to-end ML systems — from research prototypes to production-grade p
 
 <div align="center">
 
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=modelpath-dev&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=a371f7&text_color=c9d1d9&ring_color=58a6ff" />
-&nbsp;&nbsp;
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=modelpath-dev&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=8" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=modelpath-dev&theme=tokyonight" width="95%" />
+
+<br/>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=modelpath-dev&theme=tokyonight" height="160" />
+&nbsp;
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=modelpath-dev&theme=tokyonight" height="160" />
+&nbsp;
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=modelpath-dev&theme=tokyonight" height="160" />
 
 <br/><br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=modelpath-dev&theme=tokyonight&hide_border=true&background=0d1117&ring=58a6ff&fire=a371f7&currStreakLabel=58a6ff&sideLabels=58a6ff" />
-
-<br/><br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=modelpath-dev&theme=react-dark&hide_border=true&bg_color=0d1117&color=58a6ff&line=a371f7&point=58a6ff&area=true&area_color=58a6ff" width="95%" />
+<img src="https://github-profile-trophy.vercel.app/?username=modelpath-dev&theme=algolia&no-frame=true&no-bg=true&column=7&margin-w=10" width="95%" />
 
 </div>
 
