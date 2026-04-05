@@ -91,6 +91,20 @@ I build end-to-end ML systems — from research prototypes to production-grade p
 
 ---
 
+### `> contributions.graph()`
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/modelpath-dev/modelpath-dev/main/assets/contributions.svg" width="95%" />
+
+<br/>
+
+> Built AI systems at **annam.ai** → then contributed to **turocrate.ai** & **neurofin.ai** in parallel
+
+</div>
+
+---
+
 ### `> stats.render()`
 
 <div align="center">
@@ -122,7 +136,8 @@ I build end-to-end ML systems — from research prototypes to production-grade p
 **Open to collaborations on AI/ML projects**
 
 [![Gmail](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](#)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](#)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chandan-kumar-438aa3193/)
+[![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/CmlCodes)
 
 <img src="https://komarev.com/ghpvc/?username=modelpath-dev&style=for-the-badge&color=58a6ff&label=PROFILE+VIEWS" />
 
