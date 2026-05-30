@@ -4,7 +4,7 @@
 
 <br/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=40&lines=%F0%9F%94%AC+Turning+Data+into+Intelligence;%F0%9F%A7%A0+Fine-tuning+LLMs+%7C+Building+RAG+Pipelines;%F0%9F%9A%80+From+Notebooks+to+Production+ML;%E2%9A%A1+NLP+%C2%B7+Computer+Vision+%C2%B7+Deep+Learning)](https://github.com/modelpath-dev)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=40&lines=%F0%9F%94%AC+Turning+Data+into+Intelligence;)](https://github.com/modelpath-dev)
 
 </div>
 
