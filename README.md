@@ -109,11 +109,11 @@ I build end-to-end ML systems, from research prototypes to production-grade pipe
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com/?user=modelpath-dev&theme=tokyonight&hide_border=true&background=0d1117&ring=58a6ff&fire=a371f7&currStreakLabel=58a6ff&sideLabels=58a6ff&dates=484f58" />
+<img src="https://streak-stats.demolab.com/?user=modelpath-dev&theme=tokyonight&hide_border=true&background=0d1117&ring=58a6ff&fire=a371f7&currStreakLabel=58a6ff&sideLabels=58a6ff&dates=484f58&v=2" />
 
 <br/><br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=modelpath-dev&theme=react-dark&hide_border=true&bg_color=0d1117&color=58a6ff&line=a371f7&point=58a6ff&area=true&area_color=58a6ff" width="95%" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=modelpath-dev&theme=react-dark&hide_border=true&bg_color=0d1117&color=58a6ff&line=a371f7&point=58a6ff&area=true&area_color=58a6ff&v=2" width="95%" />
 
 </div>
 
