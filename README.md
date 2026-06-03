@@ -75,17 +75,17 @@ I build end-to-end ML systems, from research prototypes to production-grade pipe
 
 <div align="center">
 
-| | Project | What it does | Stack |
-|---|---|---|---|
-| 🧠 | [**CogniDB**](https://github.com/modelpath-dev/cognidb) | Talk to your database in plain English — NL→SQL for MySQL, Postgres, Mongo & AWS RDS | `NLP` `SQL` `LLM` |
-| 🔧 | [**Mistral-Finetune**](https://github.com/modelpath-dev/Mistral-Finetune) | Fine-tune Mistral models on custom datasets | `LLM` `Training` |
-| 📚 | [**RAG Pipeline**](https://github.com/modelpath-dev/RAG_Pipeline) | Production-ready Retrieval-Augmented Generation system | `RAG` `Embeddings` |
-| 🔬 | [**Cell-Seg**](https://github.com/modelpath-dev/Cell-Seg) | Deep learning for biomedical cell segmentation | `CV` `Medical AI` |
-| 🎥 | [**Video Summarizer**](https://github.com/modelpath-dev/Video-Summarizer) | AI-powered video content summarization | `NLP` `Multimodal` |
-| ⚡ | [**Code Optimizer**](https://github.com/modelpath-dev/Code_Optimizer) | LLM-powered intelligent code optimization | `LLM` `DevTools` |
-| 👤 | [**Facematch**](https://github.com/modelpath-dev/Facematch) | Face recognition & matching system | `CV` `Recognition` |
-| 📊 | [**PolicyPulse**](https://github.com/modelpath-dev/PolicyPulse) | NLP-driven policy document analysis | `NLP` `Analytics` |
-| 📄 | [**Scholar Paper**](https://github.com/modelpath-dev/Scholar_Paper) | Research paper analysis & insights | `NLP` `Research` |
+## 📌 Pinned Projects
+
+A curated set of my pinned repositories - spanning LLMs, computer vision, medical AI, and developer tooling.
+
+|     | Project | What it does | Stack |
+| :-: | :--- | :--- | :--- |
+| 🔧 | [**Mistral-Finetune**](https://github.com/modelpath-dev/Mistral-Finetune) | Fine-tune Mistral models on custom datasets with LoRA/RAG | `LLM` &nbsp;`Training` |
+| 🔬 | [**Cancer-Cells**](https://github.com/modelpath-dev/Cancer-Cells) | Deep learning for cancer cell detection & segmentation | `CV` &nbsp;`Medical AI` |
+| 👤 | [**Facematch**](https://github.com/modelpath-dev/Facematch) | Face recognition & matching system | `CV` &nbsp;`Recognition` |
+| 🛠️ | [**Crucible**](https://github.com/modelpath-dev/Crucible) | Agentic coding IDE | `LLM` &nbsp;`DevTools` |
+| 🎙️ | [**Vocat**](https://github.com/modelpath-dev/Vocat) | Voice-based interview agent | `Voice` &nbsp;`Multimodal` |
 
 </div>
 
