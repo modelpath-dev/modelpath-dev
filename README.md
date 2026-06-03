@@ -77,15 +77,16 @@ I build end-to-end ML systems, from research prototypes to production-grade pipe
 
 ## 📌 Pinned Projects
 
-A curated set of my pinned repositories - spanning LLMs, computer vision, medical AI, and developer tooling.
+A curated set of my pinned repositories — spanning LLM safety, speech, computer vision, medical AI, and quantization.
 
 |     | Project | What it does | Stack |
 | :-: | :--- | :--- | :--- |
-| 🔧 | [**Mistral-Finetune**](https://github.com/modelpath-dev/Mistral-Finetune) | Fine-tune Mistral models on custom datasets with LoRA/RAG | `LLM` &nbsp;`Training` |
-| 🔬 | [**Cancer-Cells**](https://github.com/modelpath-dev/Cancer-Cells) | Deep learning for cancer cell detection & segmentation | `CV` &nbsp;`Medical AI` |
+| ⚡ | [**Bitwiser**](https://github.com/modelpath-dev/Bitwiser) | 1-bit quantization tooling for Apple Silicon | `Quantization` &nbsp;`TypeScript` |
+| 🛡️ | [**ShieldPrompt**](https://github.com/modelpath-dev/ShieldPrompt) | PII-masking middleware for LLMs (PyPI · MCP server) | `LLM Safety` &nbsp;`PII` |
 | 👤 | [**Facematch**](https://github.com/modelpath-dev/Facematch) | Face recognition & matching system | `CV` &nbsp;`Recognition` |
-| 🛠️ | [**Crucible**](https://github.com/modelpath-dev/Crucible) | Agentic coding IDE | `LLM` &nbsp;`DevTools` |
 | 🎙️ | [**Vocat**](https://github.com/modelpath-dev/Vocat) | Voice-based interview agent | `Voice` &nbsp;`Multimodal` |
+| 🗣️ | [**whisper-finetune**](https://github.com/modelpath-dev/whisper-finetune) | LoRA fine-tuning of Whisper-small for Hindi ASR on Common Voice 17 | `ASR` &nbsp;`LoRA` &nbsp;`PEFT` |
+| 🔬 | [**Cancer-Cells**](https://github.com/modelpath-dev/Cancer-Cells) | Deep learning for cancer cell detection & segmentation | `CV` &nbsp;`Medical AI` |
 
 </div>
 
