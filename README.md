@@ -86,7 +86,6 @@ A curated set of my pinned repositories — spanning LLM safety, speech, compute
 | 👤 | [**Facematch**](https://github.com/modelpath-dev/Facematch) | Face recognition & matching system | `CV` &nbsp;`Recognition` |
 | 🎙️ | [**Vocat**](https://github.com/modelpath-dev/Vocat) | Voice-based interview agent | `Voice` &nbsp;`Multimodal` |
 | 🗣️ | [**whisper-finetune**](https://github.com/modelpath-dev/whisper-finetune) | LoRA fine-tuning of Whisper-small for Hindi ASR on Common Voice 17 | `ASR` &nbsp;`LoRA` &nbsp;`PEFT` |
-| 🔬 | [**Cancer-Cells**](https://github.com/modelpath-dev/Cancer-Cells) | Deep learning for cancer cell detection & segmentation | `CV` &nbsp;`Medical AI` |
 
 </div>
 
