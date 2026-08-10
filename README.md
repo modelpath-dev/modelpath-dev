@@ -16,11 +16,11 @@
 
 ```python
 class ChandanKumar:
-    role      = "AI/ML Engineer & Web3 Developer"
-    focus     = ["LLMs", "RAG", "Computer Vision", "Web3", "Smart Contracts"]
-    languages = ["Python", "TypeScript", "Java", "Solidity"]
-    stack     = ["FastAPI", "Next.js", "React", "MongoDB", "EVM", "Foundry"]
-    interests = ["AI x Web3", "On-Chain Data", "Developer Reputation"]
+    role      = "AI Engineer"
+    focus     = ["LLMs", "RAG", "Computer Vision"]
+    languages = ["Python", "TypeScript", "Java"]
+    stack     = ["FastAPI", "Next.js", "React", "MongoDB"]
+    interests = ["AI x Web3", "On-Chain Data"]
     motto     = "Ship models, not just notebooks"
 ```
 
