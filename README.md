@@ -105,15 +105,6 @@ A curated set of my pinned repositories — spanning LLM safety, speech, compute
 
 </div>
 
----
-
-### `> stats.render()`
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=modelpath-dev&theme=react-dark&hide_border=true&bg_color=0d1117&color=58a6ff&line=a371f7&point=58a6ff&area=true&area_color=58a6ff&v=2" width="95%" />
-
-</div>
 
 ---
 
