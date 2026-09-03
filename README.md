@@ -16,12 +16,32 @@
 
 ```python
 class ChandanKumar:
-    role      = "AI Engineer"
-    focus     = ["LLMs", "RAG", "Computer Vision"]
-    languages = ["Python", "TypeScript", "Java"]
-    stack     = ["FastAPI", "Next.js", "React", "MongoDB"]
-    interests = ["AI x Web3", "On-Chain Data"]
-    motto     = "Ship models, not just notebooks"
+    role   = "AI Engineer | Voice AI"
+    
+    focus  = [
+        "Speech AI",
+        "LLMs",
+        "Real-Time Voice",
+    ]
+    stack = [
+        "Python",
+        "Go",
+        "FastAPI",
+        "Ruby on Rails",
+        "LiveKit",
+        "WebRTC",
+        "SIP"
+    ]
+    
+    interests = [
+        "Conversational AI",
+        "Open Source AI",
+        "Noise Cancellation",
+        "Fine-tuning"
+        "Latency Optimization"
+    ]
+    
+    motto = "Ship models, not just notebooks"
 ```
 
 I build end-to-end ML systems, from research prototypes to production-grade pipelines. Whether it's fine-tuning a Mistral model, building retrieval-augmented generation systems, or deploying computer vision models for cell segmentation, I love turning complex AI problems into working software.
